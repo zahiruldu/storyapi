@@ -3,8 +3,6 @@ const Story = require('../models/story.model');
 
 exports.getStories = (req, res) => {
 
-    //res.send({ message: 'Welcome to Node Boilerplate!' });
-
     Story.find({}).exec((err,result)=>{
     	if (err) {
     		res.status(400).send(err);
@@ -28,8 +26,6 @@ exports.addNote = (req, res) => {
 };
 
 exports.getStory = (req, res) => {
-
-    
 
     Story.findOne({_id: req.params.id}).exec((err,result)=>{
     	if (err) {
