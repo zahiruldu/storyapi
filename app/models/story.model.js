@@ -16,7 +16,6 @@ const StorySchema = new Schema({
   },
   contact: {
     type: String,
-    unique:true,
     index: true
   },
   country: {
