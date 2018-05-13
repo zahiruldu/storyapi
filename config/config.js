@@ -1,15 +1,15 @@
 module.exports = {
   //MongoDB configuration
   development: {
-    db: 'mongodb://127.0.0.1/hellosofts',
+    db: 'mongodb://suicide:Suicide123@ds221990.mlab.com:21990/suicide',
     app: {
-      name: 'hellosofts'
+      name: 'Suicide'
     }
   },
   production: {
-    db: 'mongodb://127.0.0.1/hellosofts',
+    db: 'mongodb://suicide:Suicide123@ds221990.mlab.com:21990/suicide',
     app: {
-      name: 'hellosofts'
+      name: 'Suicide'
     }
   }
 };
