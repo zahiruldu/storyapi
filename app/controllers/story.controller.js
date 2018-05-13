@@ -36,4 +36,17 @@ exports.getStory = (req, res) => {
     })
 };
 
+exports.delete = (req, res) => {
+
+
+    Story.remove({ _id: req.params.id})
+        .exec((err, result)=>{
+        	if (err) {
+        		res.status(400).send(err);
+        	} else {
+        		res.send(result)
+        	}
+        });
+};
+
 module.exports = exports;
